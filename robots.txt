@@ -1,21 +1,55 @@
+# ============================================
+# robots.txt - Syria Building Calculator
+# ============================================
+
+# Main crawler rules (applies to ALL bots)
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://syria-building-calc.com/sitemap.xml
+Sitemap: https://abdshehab.github.io/syria-building-cala1/sitemap.xml
 
-# Crawl rate
-Crawl-delay: 1
-
-# Disallow admin areas (if any in future)
+# ============================================
+# Restricted areas (for future use)
+# ============================================
 Disallow: /admin/
 Disallow: /api/
 Disallow: /private/
+Disallow: /draft/
+Disallow: /test/
 
-# Allow Googlebot full access
+# ============================================
+# Specific bot rules
+# ============================================
+
+# Googlebot - full access
 User-agent: Googlebot
 Allow: /
 
-# Allow Bingbot full access
+# Bingbot - full access
 User-agent: Bingbot
 Allow: /
+
+# Yahoo Slurp - full access
+User-agent: Slurp
+Allow: /
+
+# DuckDuckGo - full access
+User-agent: DuckDuckBot
+Allow: /
+
+# Baidu - full access (if targeting China)
+User-agent: Baiduspider
+Allow: /
+
+# ============================================
+# Bad bots to block (optional)
+# ============================================
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
