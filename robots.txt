@@ -1,50 +1,19 @@
-# ============================================
-# robots.txt - Syria Building Calculator
-# https://abdshehab.github.io/syria-building-cala1/
-# ============================================
-
-# Main crawler rules (applies to ALL bots)
 User-agent: *
 Allow: /
-
-# Sitemap location
 Sitemap: https://abdshehab.github.io/syria-building-cala1/sitemap.xml
 
-# Restricted areas (for future use)
-Disallow: /admin/
-Disallow: /api/
-Disallow: /private/
-Disallow: /draft/
-Disallow: /test/
+# تحسين الفهرسة لمحركات البحث
+# السماح بفهرسة جميع الصفحات المهمة
+Allow: /index.html
+Allow: /calculator.html
+Allow: /blog.html
+Allow: /contact.html
 
-# ============================================
-# Specific bot rules
-# ============================================
-
-# Googlebot - full access
-User-agent: Googlebot
-Allow: /
-
-# Bingbot - full access  
-User-agent: Bingbot
-Allow: /
-
-# Yahoo Slurp
-User-agent: Slurp
-Allow: /
-
-# DuckDuckGo
-User-agent: DuckDuckBot
-Allow: /
-
-# ============================================
-# Bad bots to block
-# ============================================
-User-agent: MJ12bot
-Disallow: /
-
-User-agent: AhrefsBot
-Disallow: /
-
-User-agent: SemrushBot
-Disallow: /
+# منع فهرسة الملفات غير الضرورية
+Disallow: /site-ready.zip
+Disallow: /screenshot-wide.png
+Disallow: /icon-512.png
+Disallow: /manifest.json
+Disallow: /vercel.json
+Disallow: /netlify.toml
+Disallow: /README.md
